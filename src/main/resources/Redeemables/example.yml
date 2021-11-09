@@ -1,0 +1,35 @@
+# This value should not need to be changed!
+# Only change this if your updating this conf to
+# a format introduced later in the game
+RedeemableVersion: 1
+
+# A redeemable is a part of the redeemable code system as its used
+# to create redeem codes without having to set up commands each time.
+Redeemable:
+  name: "Flight"
+  commands:
+    - '[player] fly'
+    - '[sound] UI_TOAST_CHALLENGE_COMPLETE;1;0.4'
+    - '[console] lp user {USER} permission settemp essentials.fly true 3mo'
+    - '[console] lp user {USER} permission settemp essentials.fly.safelogin true 3mo'
+    - '[message] &#8ee665&m——————————————————————————————————————————'
+    - '[message] &#e85856Happy Holidays! Thanks for playing! Enjoy 3 months of /fly!'
+    - '[message] &#8ee665&m——————————————————————————————————————————'
+    - '[broadcast] &#92fcfc&l{USER} has used /redeem <code> and received 3 months of /fly!'
+
+
+####################################################################################################
+# Setup Guide
+
+#Redeemable:
+# name: <Example> -- This is used as a identifier for this redeemable
+# commands: -- There are multiple cmd executors available to be used they are used by doing "- '[cmd] context'"
+#   - '[player] cmd' -- [player] will run a command as the player
+#   - '[console] cmd' -- [console] will run a command via the console
+#   - '[message] msg' -- [message] sends a msg to the player (Supports color & hex codes) [Hex Format: &#000000]
+#   - '[broadcast] msg' -- [broadcast] sends a msg to all online players (Supports color & hex codes) [Hex Format: &#000000]
+#   - '[sound] SOUND;VOL;PITCH' -- [sound] sends a msg to all online players (Supports color & hex codes) [Hex Format: &#000000]
+
+# List of sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+# Discord: https://discord.gg/7GGS6CwHSw
+####################################################################################################

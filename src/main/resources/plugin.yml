@@ -1,0 +1,13 @@
+name: Redeemables
+version: ${project.version}
+main: me.mrbutters.dev.redeemables.Redeemables
+api-version: 1.16
+prefix: Redeemables
+authors: [ BUTTERFIELD8 ]
+description: Redeemables, Vouchers, Coupons, and more!
+website: https://discord.gg/7GGS6CwHSw
+commands:
+  redeem:
+    description: Redeem a gift/reward code
+  redeemables:
+    description: Used to create redeemables
